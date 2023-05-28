@@ -74,9 +74,8 @@ func generateConfig() {
 			Password: password,
 		},
 		Logger: LoggerConfig{
-			Level:          "info",
-			EnableColorize: true,
-			TimeFormat:     "15:04:05.000",
+			Level:      1,
+			TimeFormat: "15:04:05.000",
 		},
 	}
 

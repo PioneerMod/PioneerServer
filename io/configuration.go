@@ -12,9 +12,8 @@ type Config struct {
 }
 
 type LoggerConfig struct {
-	Level          string `toml:"level"`
-	EnableColorize bool   `toml:"enable_colorize"`
-	TimeFormat     string `toml:"time_format"`
+	Level      int    `toml:"level"`
+	TimeFormat string `toml:"time_format"`
 }
 
 type ServerConfig struct {
@@ -54,9 +53,8 @@ func getDefaultConfig() Config {
 			Password: nil,
 		},
 		Logger: LoggerConfig{
-			Level:          "info",
-			EnableColorize: true,
-			TimeFormat:     "15:04:05.000",
+			Level:      1,
+			TimeFormat: "15:04:05.000",
 		},
 	}
 }
